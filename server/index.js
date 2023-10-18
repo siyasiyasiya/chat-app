@@ -13,7 +13,7 @@ const server = http.createServer(app);
 // Create an io server and allow for CORS from http://localhost:3000 with GET and POST methods
 const io = new Server(server, {
     cors: {
-      origin: 'chat-app-backend-4mn0y5fs5-siyas-projects-cb5a51db.vercel.app',
+      origin: 'chat-app-backend-brown.vercel.app/vercel.json',
       methods: ['GET', 'POST'],
     },
   });
@@ -112,4 +112,4 @@ io.on('connection', (socket) => {
       });
   });
 
-server.listen(4000, () => 'Server is running on port 4000');
+// server.listen(4000, () => 'Server is running on port 4000');
