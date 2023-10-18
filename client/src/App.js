@@ -5,7 +5,7 @@ import Chat from './pages/chat';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import io from 'socket.io-client';
 
-const socket = io.connect('https://chat-app-backend-brown.vercel.app/');
+const socket = io.connect('chat-app-backend-4mn0y5fs5-siyas-projects-cb5a51db.vercel.app');
 
 function App() {
   const [username, setUsername] = useState(localStorage.getItem("user") || '');
