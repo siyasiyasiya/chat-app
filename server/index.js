@@ -1,4 +1,5 @@
-require('dotenv').config();
+
+// require('dotenv').config();
 const express = require('express');
 
 const app = express();
@@ -13,8 +14,8 @@ const server = http.createServer(app);
 // Create an io server and allow for CORS from http://localhost:3000 with GET and POST methods
 const io = new Server(server, {
     cors: {
-      // origin: 'chat-app-backend-brown.vercel.app/vercel.json',
-      orgin: 'http://localhost:3000',
+      origin: 'chat-app-backend-brown.vercel.app/vercel.json',
+      // orgin: 'http://localhost:3000',
       methods: ['GET', 'POST'],
     },
   });
