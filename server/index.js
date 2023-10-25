@@ -1,11 +1,11 @@
 
 // require('dotenv').config();
-const express = require('express');
-
-const app = express();
 const http = require('http');
 const cors = require('cors');
 const { Server } = require('socket.io'); 
+const express = require('express');
+
+const app = express();
 
 app.use(cors()); // Add cors middleware
 
